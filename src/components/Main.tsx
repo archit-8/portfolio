@@ -5,7 +5,6 @@ import { BsFillPersonLinesFill } from 'react-icons/bs'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import Image from 'next/image';
 import  pro from  '../images/pro.png';
-import { HiRefresh } from 'react-icons/hi'
 function Main() {
   const newLocal = 'max-w-[1240px] w-full  mx-auto p-2 flex-auto justify-between items-center  md:flex flex-cols-2 gap-8'
   return (

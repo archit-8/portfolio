@@ -84,7 +84,7 @@ const Contact = () => {
             <input className='bg-[#ccd6f6] p-10 border-4' type="messag" id="messag" disabled={isSubmitting} {...register('messag')} placeholder='Message'/>
             {errors.messag?.message&&<div className='text-white'>{errors.messag?.message}</div>}
             <button className='text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center' type='submit' disabled={isSubmitting}>
-              Let's Collaborate
+              Lets Collaborate
               </button>
               <div className='text-black  border-4 text-xl flex bg-red-100'>data entered <pre>{JSON.stringify(watch(),null,2)}</pre></div>
         </form>

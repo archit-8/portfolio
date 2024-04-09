@@ -1,43 +1,105 @@
-import React from 'react'
-import {Input} from "@nextui-org/react";
-import {Card, CardHeader, CardBody, CardFooter, Image, Button} from "@nextui-org/react";
+export const metadata = {
+  title: "services",
+};
 
-
-export default function page() {
-  
+import React from "react";
+import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
+import { BackgroundGradient } from "@/components/ui/background-gradient";
+const testimonials = [
+  {
+    title:
+      "A full-stack developer is someone who can develop both client-side (front-end) and server-side (back-end) components of a web application",
+    name: "",
+    quote: "Full stack",
+  },
+  {
+    quote: "Troubleshooting Assistance",
+    title:
+      "Tech support helps users troubleshoot issues with their hardware and software they guide users to identify and resolve issues",
+    name: "",
+  },
+  {
+    quote: "Product Guidance",
+    name: "",
+    title:
+      "Tech support provides instructions on using products effectively.They explain features, settings, and functionalities, ensuring users make the most of their technology",
+  },
+  {
+    quote: "Hardware Support",
+    name: "",
+    title:
+      "Hardware technicians address issues related to physical devices such as computers, printers, and scanners.",
+  },
+  {
+    title:
+      "Tech support assists with software-related problems From installation to troubleshooting, they ensure software operates seamlessly for users",
+    name: "",
+    quote: "Software Assistance",
+  },
+];
+const testimonial = [
+  {
+    title:
+      "A full-stack developer is someone who can develop both client-side (front-end) and server-side (back-end) components of a web application",
+    name: "",
+    quote: "Full stack",
+  },
+  {
+    quote: "Troubleshooting Assistance",
+    title:
+      "Tech support helps users troubleshoot issues with their hardware and software they guide users to identify and resolve issues",
+    name: "",
+  },
+  {
+    quote: "Product Guidance",
+    name: "",
+    title:
+      "Tech support provides instructions on using products effectively.They explain features, settings, and functionalities, ensuring users make the most of their technology",
+  },
+  {
+    quote: "Hardware Support",
+    name: "",
+    title:
+      "Hardware technicians address issues related to physical devices such as computers, printers, and scanners.",
+  },
+  {
+    title:
+      "Tech support assists with software-related problems From installation to troubleshooting, they ensure software operates seamlessly for users",
+    name: "",
+    quote: "Software Assistance",
+  },
+];
+function Testimonial() {
   return (
-   <div className=' w-full h-screen  bg-gray-600'>
-     <h1 className=' text-white text-7xl  py-40 text-center'>our support</h1>
-    <div className=' max-h-[600px]    justify-between items-center   p-4 md:flex flex-cols-2 gap-8 '>
-        <div className="">
-           <h1 className='text-6xl  text-center text-black  '>backend</h1>
-         </div>
-         <div className="">
-           <h1 className='text-6xl   text-center text-black  '>forntend</h1>
-         </div>
-         <div className="">
-           <h1 className='text-6xl   text-center text-black  '>Database</h1>
-         </div>
-         <div className="">
-           <h1 className='text-6xl  text-center text-black  '>Ui/Ux Design</h1>
-         </div>
+    <div className=" py-40 w-full  h-screen bg-gray-900">
+      <h2 className=" text-center text-4xl text-white mb-10">
+        Hear our Services
+      </h2>
 
-   </div>
-   <div className=' w-full max-h-[500px] p-4  py-20   justify-between items-center   md:flex flex-cols-2 gap-8 '>
-        <div className="">
-           <h1 className='text-6xl   text-center text-black  '>website support</h1>
-         </div>
-         <div className="">
-           <h1 className='text-6xl   text-center text-black  '>logo design</h1>
-         </div>
-         <div className="">
-           <h1 className='text-6xl   text-center text-black  '>resume design</h1>
-         </div>
-         <div className="">
-           <h1 className='text-6xl  mt-5 text-center text-black  mb-3'>middlware</h1>
-         </div>
-
-   </div>
-   </div>
-  )
+      <div
+        className="rounded-md p-20 flex flex-col antialiased  
+       bg-white-700 dark:bg-black dark:bg-grid-white/[0.05] items-center 
+       justify-center relative overflow-hidden"
+      >
+        <InfiniteMovingCards
+          items={testimonials}
+          direction="right"
+          speed="slow"
+        />
+      </div>
+      <div
+        className=" rounded-md flex flex-col antialiased
+       bg-white-700 dark:bg-black dark:bg-grid-white/[0.05] items-center 
+       justify-center relative overflow-hidden"
+      >
+        <InfiniteMovingCards
+          items={testimonial}
+          direction="left"
+          speed="slow"
+        />
+      </div>
+    </div>
+  );
 }
+
+export default Testimonial;

@@ -11,7 +11,7 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
 
   useEffect(() => {
-    const handleClickOutside = (event) => {
+    const handleClickOutside = (event: any) => {
       if (nav && !event.target.closest(".toggle-menu")) {
         setNav(false);
       }

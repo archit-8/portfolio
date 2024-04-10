@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
@@ -15,8 +16,11 @@ function Main() {
          flex-auto justify-between items-center"
       >
         <div className="flex   items-left rounded-full">
-          <Image src={Crop} alt="/" width={400} height={350} />
+          <BackgroundGradient className="rounded-full w-410px h-360px">
+            <Image src={Crop} alt="/" width={400} height={350} />
+          </BackgroundGradient>
         </div>
+
         <div className="  grid-cols-1 text-left md:grid-cols-2   ">
           <h1 className="py-4 text-5xl text-left text-black-900">
             An Interactive <br />

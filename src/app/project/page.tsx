@@ -5,7 +5,9 @@ import React, { useEffect } from "react";
 import Head from "next/head";
 export default function Page() {
   useEffect(() => {
-    document.title = "projects";
+    if (typeof document !== "undefined") {
+      document.title = "projects";
+    }
   }, []);
 
   return (

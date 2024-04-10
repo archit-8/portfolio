@@ -11,7 +11,7 @@ function page() {
   return (
     <div className=" p-40  bg-gray-700 text-red">
       <Head>
-        <title>Projects</title>
+        <title>{document.title}</title>
       </Head>
       <div>
         <div className="text-center">

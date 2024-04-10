@@ -4,13 +4,11 @@ import Spil from "@/components/special";
 import Footer from "@/components/footer";
 export default function Home() {
   return (
-    <div className=" ">
-      <main className="">
-        <Main />
-        <Company />
-        <Spil />
-        <Footer />
-      </main>
-    </div>
+    <main className=" relative overflow-hidden p-0 m-0 h-full w-full">
+      <Main />
+      <Company />
+      <Spil />
+      <Footer />
+    </main>
   );
 }

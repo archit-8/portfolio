@@ -3,7 +3,7 @@ import { BackgroundGradient } from "@/components/ui/background-gradient";
 import Link from "next/link";
 import React, { useEffect } from "react";
 import Head from "next/head";
-function page() {
+export default function Page() {
   useEffect(() => {
     document.title = "projects";
   }, []);
@@ -196,5 +196,3 @@ function page() {
     </div>
   );
 }
-
-export default page;

@@ -71,14 +71,14 @@ const testimonial = [
 ];
 function Testimonial() {
   return (
-    <div className=" py-40 w-full  h-screen bg-gray-900">
-      <h2 className=" text-center text-4xl text-white mb-10">
+    <div className=" py-40 h-screen w-full   bg-gray-700">
+      <h2 className=" text-center text-4xl text-yellow-800 mb-10">
         Hear our Services
       </h2>
 
       <div
         className="rounded-md p-20 flex flex-col antialiased  
-       bg-white-700 dark:bg-black dark:bg-grid-white/[0.05] items-center 
+       bg-gray-700 dark:bg-gray-700 dark:bg-grid-white/[0.05] items-center 
        justify-center relative overflow-hidden"
       >
         <InfiniteMovingCards
@@ -88,8 +88,8 @@ function Testimonial() {
         />
       </div>
       <div
-        className=" rounded-md flex flex-col antialiased
-       bg-white-700 dark:bg-black dark:bg-grid-white/[0.05] items-center 
+        className="rounded-md p-20 flex flex-col antialiased  
+       bg-gray-700 dark:bg-gray-700 dark:bg-grid-white/[0.05] items-center 
        justify-center relative overflow-hidden"
       >
         <InfiniteMovingCards

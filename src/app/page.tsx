@@ -4,7 +4,7 @@ import Spil from "@/components/special";
 import Footer from "@/components/footer";
 export default function Home() {
   return (
-    <main className=" relative overflow-hidden p-0 m-0 h-full w-full">
+    <main className=" relative overflow-hidden p-0 m-0 h-full w-full bg-gray-700">
       <Main />
       <Company />
       <Spil />

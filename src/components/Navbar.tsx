@@ -31,15 +31,11 @@ const Navbar = () => {
   return (
     <div className="fixed w-full h-20 shadow-xl bg-gray-100 z-[100]">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <div className="">
+        <div className="flex items-center">
           <a href="https://mail.google.com/mail/u/0/?hl=en&tab=wm">
             <Image src={logo} alt="/" width={20} height={20} />
           </a>
-        </div>
-        <div className="ml-[-515px] text-sm">
-          <Link href="https://mail.google.com/mail/u/0/?hl=en&tab=wm">
-            <div className="">jone33@gmail.com</div>
-          </Link>
+          <div className="hidden sm:block ml-2">jone33@gmail.com</div>
         </div>
         <div className="ml-15 h-12 w-12 ">
           <Image src={logo2} alt="/" className="rounded-full" />

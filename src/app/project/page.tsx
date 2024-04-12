@@ -13,7 +13,7 @@ export default function Page() {
   return (
     <div className=" p-40  bg-gray-700 text-red">
       <Head>
-        <title>{document.title}</title>
+        <title>projects</title>
       </Head>
       <div>
         <div className="text-center">

@@ -48,13 +48,14 @@ const Contact = () => {
   const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data);
   useEffect(() => {
     if (typeof document !== "undefined") {
-      document.title = "projects";
+      document.title = "contact";
     }
   }, []);
+
   return (
     <div className="w-full h-screen bg-gray-700 flex justify-center p-40 items-center ">
       <Head>
-        <title>Service</title>
+        <title>contact</title>
       </Head>
       <form
         className="flex flex-col max-w-[600px]  h-full w-full"
